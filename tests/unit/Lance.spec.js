@@ -8,5 +8,7 @@ test("não aceita lance com valor menor do que zero", () => {
   const wrapper = mount(Lance);
   const input = wrapper.find("input");
   input.setValue(-100);
-  expect(input).toBeTruthy();
+  const lancesEmitidos = wrapper.emitted("novo-lance");
+  wrapper.trigger("submit");
+  expect(lancesEmitidos).toBeUndefined();
 });
