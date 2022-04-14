@@ -93,7 +93,7 @@ describe("Um leiloeiro comunica os valores de menor e maior lance", () => {
 
     await flushPromises();
     const maiorLance = wrapper.find(".maior-lance");
-    expect(maiorLance.element.textContent).toContain("Maior lance: R$ 1001");
+    expect(maiorLance.element.textContent).toContain("Maior lance: R$ 1099");
   });
 
   test("Mostra o menor lance daquele leilão", async () => {
@@ -107,6 +107,6 @@ describe("Um leiloeiro comunica os valores de menor e maior lance", () => {
 
     await flushPromises();
     const menorLance = wrapper.find(".menor-lance");
-    expect(menorLance.element.textContent).toContain("Menor lance: R$ 1099");
+    expect(menorLance.element.textContent).toContain("Menor lance: R$ 1001");
   });
 });
