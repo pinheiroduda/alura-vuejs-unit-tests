@@ -1,6 +1,5 @@
 /* eslint-disable quotes */
 /* eslint-disable semi */
-/* eslint-disable no-undef */
 
 import { createLeilao } from "@/http";
 import NovoLeilao from "@/views/NovoLeilao";
