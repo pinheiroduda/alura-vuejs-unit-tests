@@ -5,7 +5,6 @@
 import { createLeilao } from "@/http";
 import NovoLeilao from "@/views/NovoLeilao";
 import { mount } from "@vue/test-utils";
-import flushPromises from "flush-promises";
 
 jest.mock("@/http");
 
